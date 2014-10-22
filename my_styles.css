@@ -6,7 +6,19 @@ For example, if you wanted to change the body font:
 
 body {
   font-family: "Vollkorn";
+}*/
+
+#bg {
+  position: fixed;
+  top: 60px;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
 }
 
-*/
-
+/*
+* {
+  border: thin red solid;
+}

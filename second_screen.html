@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Application: Second Screen</title>
+  <title>At Home Downtown: Home</title>
 
-  <!-- Adds Bootswatch CSS  -->
-  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/paper/bootstrap.min.css">
+<!-- Adds Bootswatch -->
+  <link rel="stylesheet" type="text/css"
+  href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/flatly/bootstrap.min.css">
 
   <!-- Adds Font Awesome -->
   <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-  <!-- Adds your custom styles -->
 
   <link rel="stylesheet" type="text/css" href="my_styles.css">
 
@@ -18,27 +18,72 @@
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="lead">Second screen. This is a p tag with a class of lead. Just throwing it in to make sure that the template is loading Bootstrap assets correctly. Replace this content with your own.</p>
 
-        <div class="btn-group"> <!-- Wrapping a set of <a> tags with btn classes in a <div> of class btn-group joins them together into a bar -->
-          <a href="first_screen.html" class="btn btn-primary">
-            <i class="fa fa-external-link"></i> <!-- Example of how to use Font Awesome icons; often, we use them as text within buttons -->
-            Show
-          </a>
-          <a href="second_screen.html" class="btn btn-warning">
-            <i class="fa fa-edit"></i>
-            Edit
-          </a>
-          <a href="third_screen.html" class="btn btn-danger">
-            <i class="fa fa-trash-o"></i>
-            Delete
-          </a>
+<body>
+  <div class="navbar navbar-default">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">At Home Downtown</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><i class="fa fa-home"></i>
+        </a>
+        </li>
+        <li><a href="#"><i class="fa fa-list"></i></a></li>
+
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Saved Properties</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <img src="Skyline.jpg" id="bg" alt="">
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row" height=100px>
+    <div class="col-md-12">
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="jumbotron">
+          <h2>Search Chicago's Condo Buildings</h2>
+          <p>Don't just fall in love with the unit. Find a building that fits.</p>
+          <div class="form-group">
+            <label class="control-label" for="focusedInput">Start here.</label>
+            <input class="form-control" id="focusedInput" type="text" value="Trump Tower, 240 E Illinois...">
+            <p><a class="btn btn-primary"><i class="fa fa-search fa-2x"></i></a></p>
+          </div>
         </div>
       </div>
+    </div>
+
+
+  </div>
+  </div>
+  </div>
+
+
+
     </div>
   </div>
 </body>

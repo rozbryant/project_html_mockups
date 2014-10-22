@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Application: First Screen</title>
+  <title>At Home Downtown: Building Profile</title>
 
-  <!-- Adds Bootswatch CSS  -->
-  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/paper/bootstrap.min.css">
+  <!-- Adds Bootswatch -->
+  <link rel="stylesheet" type="text/css"
+  href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/flatly/bootstrap.min.css">
 
   <!-- Adds Font Awesome -->
   <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -18,28 +19,226 @@
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+  <div class="navbar navbar-default">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">At Home Downtown</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><i class="fa fa-home"></i>
+        </a>
+        </li>
+        <li><a href="#"><i class="fa fa-list"></i></a></li>
+
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <input type="text" class="form-control col-lg-8" placeholder="Search">
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Saved Properties</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <p class="lead">First screen. This is a p tag with a class of lead. Just throwing it in to make sure that the template is loading Bootstrap assets correctly. Replace this content with your own.</p>
+        <h3>Trump Tower
+<a href="#" class="btn btn-warning btn-xs">
+<i class="fa fa-star-o"></i>
+</a></h3>
 
-        <div class="btn-group"> <!-- Wrapping a set of <a> tags with btn classes in a <div> of class btn-group joins them together into a bar -->
-          <a href="first_screen.html" class="btn btn-primary">
-            <i class="fa fa-external-link"></i> <!-- Example of how to use Font Awesome icons; often, we use them as text within buttons -->
-            Show
-          </a>
-          <a href="second_screen.html" class="btn btn-warning">
-            <i class="fa fa-edit"></i>
-            Edit
-          </a>
-          <a href="third_screen.html" class="btn btn-danger">
-            <i class="fa fa-trash-o"></i>
-            Delete
-          </a>
-        </div>
+        <h4>401 North Wabash Avenue, Chicago 60611</h4>
+
+      </div>
+    </div>
+    <div class="row">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#profile" data-toggle="tab">Profile</a></li>
+        <li><a href="#ownership" data-toggle="tab">Ownership</a></li>
+        <li><a href="#amenities" data-toggle="tab">Amenities</a></li>
+        <li><a href="#stats" data-toggle="tab">Stats</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="profile">
+         <p><strong>Headline about this building!</strong> This is text about fabulous Trump Tower. You won't find a more luxurious place to live in downtown Chicago. The views, the views, the views. Celebrities and professional athletes flock!</p>
+       </div>
+       <div class="tab-pane fade" id="ownership">
+        <p><strong>Condo:</strong> Unit ownership. Own the inside of your four walls and get a traditional mortgage.</p>
+      </div>
+      <div class="tab-pane fade" id="amenities">
+        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+      </div>
+      <div class="tab-pane fade" id="stats">
+        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-md-8" align="center">
+      <div class="well well-lg">
+        <img src="trump.jpg" width=500px height=500px alt="Chicago's Trump Tower" class="img-responsive">
+      </div>
+
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">River North | Luxury | 400 units</h3>
+        </div>
+        <div class="panel-body">
+        <ul>
+          <li>Free Wifi
+          <i class="fa fa-wifi"></i></li>
+          <li>Public Transport
+          <i class="fa fa-bus"></i></li>
+          <li>Deeded Parking
+          <i class="fa fa-automobile"></i></li>
+          <li>Bike Storage
+          <i class="fa fa-bicycle"></i></li>
+          <li>Business Center
+          <i class="fa fa-laptop"></i></li>
+          <li>Concierge
+          <i class="fa fa-question"></i></li>
+        </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel panel-primary">
+
+        <div class="panel-heading"><h4>Active Listings in Trump Tower</h4>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail" align="center">
+
+                <img src="trump.jpg" alt="...">
+                Unit 86A
+                <p>2bd / 2bth</p>
+              </a>
+            </div>
+
+
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail" align="center">
+
+                <img src="trump.jpg" alt="...">
+                Unit 86A
+                <p>2bd / 2bth</p>
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail" align="center">
+
+                <img src="trump.jpg" alt="...">
+                Unit 86A
+                <p>2bd / 2bth</p>
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail" align="center">
+
+                <img src="trump.jpg" alt="...">
+                Unit 86A
+                <p>2bd / 2bth</p>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail" align="center">
+                <img src="trump.jpg" alt="...">
+                Unit 86A
+                <p>2bd / 2bth</p>
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail" align="center">
+
+                <img src="trump.jpg" alt="...">
+                Unit 86A
+                <p>2bd / 2bth</p>
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail" align="center">
+
+                <img src="trump.jpg" alt="...">
+                Unit 86A
+                <p>2bd / 2bth</p>
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail" align="center">
+
+                <img src="trump.jpg" alt="...">
+                Unit 86A
+                <p>2bd / 2bth</p>
+              </a>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading" align="center">Map This Property
+  <div class="panel-body">
+  <img src="mapphoto.jpg" width=100% height=100% alt="Map This Location" class="img-responsive">
+        </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+  <!--   <p class="lead">First screen. This is a p tag with a class of lead. Just throwing it in to make sure that the template is loading Bootstrap assets correctly. Replace this content with your own.</p>
+    </div>
+    <div class="btn-group"> <!-- Wrapping a set of <a> tags with btn classes in a <div> of class btn-group joins them together into a bar -->
+   <!--   <a href="first_screen.html" class="btn btn-primary">
+        <i class="fa fa-external-link"></i> <!-- Example of how to use Font Awesome icons; often, we use them as text within buttons Show
+    <!--  </a>
+      <a href="second_screen.html" class="btn btn-warning">
+        <i class="fa fa-edit"></i>
+        Edit
+      </a>
+      <a href="third_screen.html" class="btn btn-danger">
+        <i class="fa fa-trash-o"></i>
+        Delete
+      </a>-->
+
+    </div>
+  </div>
+
+
+</div>
+</div>
+</div>
 </body>
 </html>
